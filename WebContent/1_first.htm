@@ -1,0 +1,343 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="baidu-site-verification" content="7Ifo6xXL3e" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>加气砖|重庆荣和胜新型建材有限公司</title>
+<meta name="keywords" content="加气砖,重庆荣和胜新型建材有限公司" />
+<meta name="description" content="重庆荣和胜新型建材有限公司专业生产加气砖隔墙、轻质隔墙，电话：187-2337-7259" />
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: rgba(96,96,96,0.20);
+}
+-->
+</style>
+<link href="cs/cs.css" rel="stylesheet" type="text/css" />
+<link href="cs/link.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
+	var len = $("#focus ul li").length; //获取焦点图个数
+	var index = 0;
+	var picTimer;
+	
+	//以下代码添加数字按钮和按钮后的半透明条，还有上一页、下一页两个按钮
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span></span>";
+	}
+	btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
+	$("#focus").append(btn);
+	$("#focus .btnBg").css("opacity",0.5);
+
+	//为小按钮添加鼠标滑入事件，以显示相应的内容
+	$("#focus .btn span").css("opacity",0.4).mouseenter(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	//上一页、下一页按钮透明度处理
+	$("#focus .preNext").css("opacity",0.2).hover(function() {
+		$(this).stop(true,false).animate({"opacity":"0.5"},300);
+	},function() {
+		$(this).stop(true,false).animate({"opacity":"0.2"},300);
+	});
+
+	//上一页按钮
+	$("#focus .pre").click(function() {
+		index -= 1;
+		if(index == -1) {index = len - 1;}
+		showPics(index);
+	});
+
+	//下一页按钮
+	$("#focus .next").click(function() {
+		index += 1;
+		if(index == len) {index = 0;}
+		showPics(index);
+	});
+
+	//本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
+	$("#focus ul").css("width",sWidth * (len));
+	
+	//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			showPics(index);
+			index++;
+			if(index == len) {index = 0;}
+		},4000); //此4000代表自动播放的间隔，单位：毫秒
+	}).trigger("mouseleave");
+	
+	//显示图片函数，根据接收的index值显示相应的内容
+	function showPics(index) { //普通切换
+		var nowLeft = -index*sWidth; //根据index值计算ul元素的left值
+		$("#focus ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+		//$("#focus .btn span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
+		$("#focus .btn span").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300); //为当前的按钮切换到选中的效果
+	}
+});
+
+</script>
+<div class="q1">
+<div class="q2">
+<div class="q3"><dl><img src="images/t_03.jpg" /></dl><dt>公司通过CNAS环境管理体系认证</dt><dl><img src="images/t_05.jpg" /></dl><dt>公司通过ISO9001-2000质量管理体系认证</dt></div>
+<div class="q4"><a href="javascript:void(0)" onclick="SetHome(this,window.location)" class="a1">设为首页</a> | <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)" class="a1">加入收藏</a></div>
+</div>
+</div>
+<div class="q5"><dl><a href="/"><img src="images/logo_03.png" /></a></dl>
+<dt><img src="images/t_12.png" /></dt></div>
+<div class="q6">
+<div class="q7"><a href="1_first.htm"><dl>首页</dl></a><a href="2_aboutUs.htm"><dl>关于我们</dl></a><a href="3_productShow.htm"><dl>产品展示</dl></a><a href="4_news.htm"><dl>新闻中心</dl></a><a href="5_besiness.htm"><dl>业务范围</dl></a><a href="6_technicalCommon.htm"><dl>技术常识</dl></a><a href="8_leaveMessage.htm"><dl>留言反馈</dl></a><a href="7_callUs.htm"><dt>联系我们</dt></a></div>
+
+</div>
+<div id="focus">
+		<ul>
+		
+			<li><img src="023web/Img/2016914165894803.jpg" /></li>
+			
+			<li><img src="023web/Img/2016914045965048.jpg" /></li>
+			
+		</ul>
+	</div>
+</div>
+<div class="q2" style="padding-top:10px;">
+<div class="q8">
+<div class="q9">
+<div class="q10"><dl>P</dl><dt>产品分类</dt><p>roduct</p></div>
+
+<a href="#"><div class="q12">加气砖隔墙</div></a>
+
+<a href="#"><div class="q12">轻质隔墙</div></a>
+
+<a href="#"><div class="q12">轻质砖粘合剂</div></a>
+
+<a href="#"><div class="q12">轻质砖界面剂</div></a>
+
+</div>
+<div class="q29">
+<img src="images/ffff_03.png" /><img src="images/ffff_06.png" /><img src="images/ffff_08.png" />
+</div>
+<div class="q11" style="margin-top:10px;">联系我们</div>
+<div class="q30"><strong>重庆荣和胜新型建材有限公司</strong> <br>
+联系人：母经理<br>
+电话：187-2337-7259<br>
+电话：157-2335-9823<br>
+地址：重庆市渝北区佳园路北城阳光经典<br>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=425628341&amp;site=qq&amp;menu=yes"><img border="0" width="77" height="22" src="images/qq.png"></a> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=425628341&amp;site=qq&amp;menu=yes"><img border="0" width="77" height="22" src="images/qq.png"></a>
+<p></p></div>
+</div>
+<div class="q13">
+<div class="q14"><dl>热销产品</dl><dt>Products</dt><a href="pic.asp?id=101"><dd>MORE</dd></a></div>
+
+<div class="q15"><a href="#" title="重庆隔墙施工团队"><img src="023web/Img/20169140245742786.jpg" border="0" /></a><dl>重庆隔墙施工团队</dl></div>
+
+<div class="q15"><a href="#" title="隔墙施工团队"><img src="023web/Img/20169140235310753.jpg" border="0" /></a><dl>隔墙施工团队</dl></div>
+
+<div class="q15"><a href="#" title="轻质隔墙板施工"><img src="023web/Img/20169140234132870.jpg" border="0" /></a><dl>轻质隔墙板施工</dl></div>
+
+<div class="q15"><a href="#" title="轻质隔墙"><img src="023web/Img/20169140232892066.jpg" border="0" /></a><dl>轻质隔墙</dl></div>
+
+<div class="q15"><a href="#" title="重庆加气砖价格"><img src="023web/Img/20169140231477847.jpg" border="0" /></a><dl>重庆加气砖价格</dl></div>
+
+<div class="q15"><a href="#" title="重庆加气砖厂家"><img src="023web/Img/2016914023147729.jpg" border="0" /></a><dl>重庆加气砖厂家</dl></div>
+
+<div class="q15"><a href="#" title="重庆加气砖隔墙施工"><img src="023web/Img/2016914022228275.jpg" border="0" /></a><dl>重庆加气砖隔墙施工</dl></div>
+
+<div class="q15"><a href="#" title="重庆加气砖批发"><img src="023web/Img/20169140214642328.jpg" border="0" /></a><dl>重庆加气砖批发</dl></div>
+
+<div class="q15"><a href="#" title="加气砖"><img src="023web/Img/20169140212411846.jpg" border="0" /></a><dl>加气砖</dl></div>
+
+</div>
+</div>
+<div class="q2" style="padding-top:10px;">
+<div class="q16">
+<div class="q17"><dl>关于我们</dl><dt>About us</dt><a href="about.asp?id=2"><dd>MORE</dd></a></div>
+<div class="q18"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="41%" align="center"><img src="images/c_03.png" width="264" height="223" /></td>
+    <td width="59%" valign="top"><dl>关于我们</dl>
+    <dt>　　重庆荣和胜新型建材有限公司是一家专业加气砖隔墙工程施工安装。我们专注于为小区、写字楼、酒店、宾馆、KTV、学校等民用建筑和工业建筑提供轻质隔墙砖、 装修业务等。拥有一支效率至上、服务周到、反应迅捷的专业安装施工队伍，为广大业主提供一体化的隔墙安装服务，已与多家大型建筑集团达成了长期合作关系，并成为制定供应商。　　轻质砖砌块具有质轻、高强、耐久、保温、隔音、防火、抗渗、锚固性能好的特点，具有施工快捷，可加工性强，降低建筑物造价，增加建筑物使用面积等优点，是政府机构推荐优先使用的主导墙体材料，得到国家墙改政策、税收…<a href="2_aboutUs.htm" class="a1">详细</a>
+  </dt></td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="q19"><div class="q21"><dl>荣誉资质</dl><a href="zz.asp?id=108"><dt>MORE</dt></a></div>
+
+
+</div>
+
+</div>
+<!-- 
+<div class="q2" style="padding-top:10px;">
+<div class="q22">
+<div class="q23"><dl>企业动态<br /><span>News</span></dl><a href="news.asp?id=9"><dd>MORE</dd></a></div>
+<div class="q24">
+
+<a href="list.asp?id=23&foid=9" title="轻钢龙骨隔墙做法"><dl>·轻钢龙骨隔墙做法</dl></a>
+
+<a href="list.asp?id=22&foid=9" title="加气砖施工质量的抽检"><dl>·加气砖施工质量的抽检</dl></a>
+
+<a href="list.asp?id=21&foid=9" title="加气砖使用在高层建筑上的优势"><dl>·加气砖使用在高层建筑上的优势</dl></a>
+
+<a href="list.asp?id=20&foid=9" title="加气砖在检验上要注意的问题"><dl>·加气砖在检验上要注意的问题</dl></a>
+
+<a href="list.asp?id=19&foid=9" title="加气砖是绿色建筑行业的先行者"><dl>·加气砖是绿色建筑行业的先行者</dl></a>
+
+<a href="list.asp?id=18&foid=9" title="加气砖屋面防裂措施"><dl>·加气砖屋面防裂措施</dl></a>
+
+<a href="list.asp?id=17&foid=9" title="加气砖出现生产方面问题的解决大全"><dl>·加气砖出现生产方面问题的解决大全</dl></a>
+
+<a href="list.asp?id=16&foid=9" title="加气砖的具体比例和步骤"><dl>·加气砖的具体比例和步骤</dl></a>
+
+</div>
+</div>
+<div class="q22">
+<div class="q23"><dl>行业动态<br /><span>Industry News</span></dl><a href="news.asp?id=10"><dd>MORE</dd></a></div>
+<div class="q24">
+
+<a href="list.asp?id=39&foid=10" title="加气砖的养护能增加强度"><dl>·加气砖的养护能增加强度</dl></a>
+
+<a href="list.asp?id=38&foid=10" title="加气砖替代实心砖是大势所趋"><dl>·加气砖替代实心砖是大势所趋</dl></a>
+
+<a href="list.asp?id=37&foid=10" title="加气砖砌筑的七项要求"><dl>·加气砖砌筑的七项要求</dl></a>
+
+<a href="list.asp?id=36&foid=10" title="传统切块砖与新型轻质墙板的优缺点"><dl>·传统切块砖与新型轻质墙板的优缺点</dl></a>
+
+<a href="list.asp?id=35&foid=10" title="加气砖生产中的双眼皮和崩边现象指什么"><dl>·加气砖生产中的双眼皮和崩边现象指什么</dl></a>
+
+<a href="list.asp?id=34&foid=10" title="加气砖的生产工艺和适用范围"><dl>·加气砖的生产工艺和适用范围</dl></a>
+
+<a href="list.asp?id=33&foid=10" title="加气轻质砖的使用情况和规格介绍"><dl>·加气轻质砖的使用情况和规格介绍</dl></a>
+
+<a href="list.asp?id=32&foid=10" title="加气砖的生产过程添加剂的小秘密"><dl>·加气砖的生产过程添加剂的小秘密</dl></a>
+
+</div>
+</div>
+<div class="q25">
+<div class="q23"><dl>技术常识<br /><span>Technical knowledge</span></dl><a href="news.asp?id=11"><dd>MORE</dd></a></div>
+<div class="q24">
+
+<a href="list.asp?id=31&foid=11" title="加气砖制造中蒸养釜的安全保护作业"><dl>·加气砖制造中蒸养釜的安全保护作业</dl></a>
+
+<a href="list.asp?id=30&foid=11" title="加气砖抗压分析"><dl>·加气砖抗压分析</dl></a>
+
+<a href="list.asp?id=29&foid=11" title="加气砖对于发泡膨胀过程的要求"><dl>·加气砖对于发泡膨胀过程的要求</dl></a>
+
+<a href="list.asp?id=28&foid=11" title="加气砖砌块胚体的硬化过程"><dl>·加气砖砌块胚体的硬化过程</dl></a>
+
+<a href="list.asp?id=27&foid=11" title="加气砖被受喜爱的5大特性"><dl>·加气砖被受喜爱的5大特性</dl></a>
+
+<a href="list.asp?id=26&foid=11" title="分析加气砖市场的需求"><dl>·分析加气砖市场的需求</dl></a>
+
+<a href="list.asp?id=25&foid=11" title="加气砖砌体施工中分情况对抗裂痕"><dl>·加气砖砌体施工中分情况对抗裂痕</dl></a>
+
+<a href="list.asp?id=24&foid=11" title="加气砖的节能体现在哪里"><dl>·加气砖的节能体现在哪里</dl></a>
+
+</div>
+</div>
+</div> 
+-->
+<div class="q2" style="padding-top:10px;">
+<div class="q26">
+<div class="q17"><dl>友情链接</dl><dt>Links</dt>
+</div>
+<div class="q27">
+          <a href="http://www.cqqgq.com" title="重庆轻质隔墙" target="_blank" >重庆轻质隔墙</a>&nbsp;
+          
+          <a href="http://www.cqjqz168.com" title="重庆加气砖" target="_blank" >重庆加气砖</a>&nbsp;
+          </div>
+</div>
+</div>
+<div class="q28">Copyrigt &#169; 2017 重庆荣和胜新型建材有限公司 版权所有 渝ICP备16013050号-2    <br>
+电话： 187-2337-7259 联系人：母经理     地址：重庆市渝北区佳园路北城阳光经典
+<!-- 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3c0d33d778c93f088ef9f2f65a126afd";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+ -->
+</div>
+<div class="q77" id="light">
+<div class="q78"></div>
+<div class="q80">
+<div class="q81">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><div class="q82"><dl>187-2337-7259</dl><dt>7*24小时咨询热线↑</dt></div></a>
+<div class="q83"><img src="images/qq_06.png" /><a href="#" target="_blank"><img src="images/qq_09.png" /></a></div>
+<div class="q84"><img src="images/qq_11.png" style="margin-bottom:5px;" />
+<div class="q85"><a href="http://wpa.qq.com/msgrd?v=425628341&amp;uin=#&amp;site=qq&amp;menu=yes" target="_blank"><img src="images/qqq_03.png" /></a>母</div>
+</div>
+<div class="q86"><img src="images/qq_14.png" style="margin-bottom:10px;"/><br /><img src="images/qq_144.png" /></div>
+</div>
+</div>
+<div class="q79"></div>
+</div>
+<!-- 
+<script type="text/javascript"> 
+// 设置为主页 
+function SetHome(obj,vrl){ 
+try{ 
+obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl); 
+} 
+catch(e){ 
+if(window.netscape) { 
+try { 
+netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect"); 
+} 
+catch (e) { 
+alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。"); 
+} 
+var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch); 
+prefs.setCharPref('browser.startup.homepage',vrl); 
+}else{ 
+alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。"); 
+} 
+} 
+} 
+// 加入收藏 兼容360和IE6 
+function shoucang(sTitle,sURL) 
+{ 
+try 
+{ 
+window.external.addFavorite(sURL, sTitle); 
+} 
+catch (e) 
+{ 
+try 
+{ 
+window.sidebar.addPanel(sTitle, sURL, ""); 
+} 
+catch (e) 
+{ 
+alert("加入收藏失败，请使用Ctrl+D进行添加"); 
+} 
+} 
+} 
+</script>
+ -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?type=left&amp;btn=l5.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</body>
+</html>

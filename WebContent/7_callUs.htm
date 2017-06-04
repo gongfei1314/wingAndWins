@@ -1,0 +1,191 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>联系我们|加气砖|重庆荣和胜新型建材有限公司</title>
+<meta name="keywords" content="加气砖,重庆荣和胜新型建材有限公司" />
+<meta name="description" content="重庆荣和胜新型建材有限公司专业生产加气砖隔墙、轻质隔墙，电话：187-2337-7259" />
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: rgba(96,96,96,0.20);
+}
+-->
+</style>
+<link href="cs/cs.css" rel="stylesheet" type="text/css" />
+<link href="cs/link.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
+	var len = $("#focus ul li").length; //获取焦点图个数
+	var index = 0;
+	var picTimer;
+	
+	//以下代码添加数字按钮和按钮后的半透明条，还有上一页、下一页两个按钮
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span></span>";
+	}
+	btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
+	$("#focus").append(btn);
+	$("#focus .btnBg").css("opacity",0.5);
+
+	//为小按钮添加鼠标滑入事件，以显示相应的内容
+	$("#focus .btn span").css("opacity",0.4).mouseenter(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	//上一页、下一页按钮透明度处理
+	$("#focus .preNext").css("opacity",0.2).hover(function() {
+		$(this).stop(true,false).animate({"opacity":"0.5"},300);
+	},function() {
+		$(this).stop(true,false).animate({"opacity":"0.2"},300);
+	});
+
+	//上一页按钮
+	$("#focus .pre").click(function() {
+		index -= 1;
+		if(index == -1) {index = len - 1;}
+		showPics(index);
+	});
+
+	//下一页按钮
+	$("#focus .next").click(function() {
+		index += 1;
+		if(index == len) {index = 0;}
+		showPics(index);
+	});
+
+	//本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
+	$("#focus ul").css("width",sWidth * (len));
+	
+	//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			showPics(index);
+			index++;
+			if(index == len) {index = 0;}
+		},4000); //此4000代表自动播放的间隔，单位：毫秒
+	}).trigger("mouseleave");
+	
+	//显示图片函数，根据接收的index值显示相应的内容
+	function showPics(index) { //普通切换
+		var nowLeft = -index*sWidth; //根据index值计算ul元素的left值
+		$("#focus ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+		//$("#focus .btn span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
+		$("#focus .btn span").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300); //为当前的按钮切换到选中的效果
+	}
+});
+
+</script>
+<div class="q1">
+<div class="q2">
+<div class="q3"><dl><img src="images/t_03.jpg" /></dl><dt>公司通过CNAS环境管理体系认证</dt><dl><img src="images/t_05.jpg" /></dl><dt>公司通过ISO9001-2000质量管理体系认证</dt></div>
+<div class="q4"><a href="javascript:void(0)" onclick="SetHome(this,window.location)" class="a1">设为首页</a> | <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)" class="a1">加入收藏</a></div>
+</div>
+</div>
+<div class="q5"><dl><a href="/"><img src="images/logo_03.png" /></a></dl>
+<dt><img src="images/t_12.png" /></dt></div>
+<div class="q6">
+<div class="q7"><a href="1_first.htm"><dl>首页</dl></a><a href="2_aboutUs.htm"><dl>关于我们</dl></a><a href="3_productShow.htm"><dl>产品展示</dl></a><a href="4_news.htm"><dl>新闻中心</dl></a><a href="5_besiness.htm"><dl>业务范围</dl></a><a href="6_technicalCommon.htm"><dl>技术常识</dl></a><a href="8_leaveMessage.htm"><dl>留言反馈</dl></a><a href="7_callUs.htm"><dt>联系我们</dt></a></div>
+</div>
+<div id="focus">
+		<ul>
+		
+			<li><img src="023web/Img/2016914165894803.jpg" /></li>
+			
+			<li><img src="023web/Img/2016914045965048.jpg" /></li>
+			
+		</ul>
+	</div>
+</div>
+<div class="q2" style="padding-top:10px;">
+<div class="q8">
+<div class="q9">
+<div class="q10"><dl>P</dl><dt>产品分类</dt><p>roduct</p></div>
+
+<a href="#"><div class="q12">加气砖隔墙</div></a>
+
+<a href="#"><div class="q12">轻质隔墙</div></a>
+
+<a href="#"><div class="q12">轻质砖粘合剂</div></a>
+
+<a href="#"><div class="q12">轻质砖界面剂</div></a>
+
+
+
+</div>
+<div class="q29">
+<img src="images/ffff_03.png" /><img src="images/ffff_06.png" /><img src="images/ffff_08.png" />
+</div>
+<div class="q11" style="margin-top:10px;">联系我们</div>
+<div class="q30"><strong>重庆荣和胜新型建材有限公司</strong> <br>
+联系人：母经理<br>
+电话：187-2337-7259<br>
+电话：157-2335-9823<br>
+地址：重庆市渝北区佳园路北城阳光经典<br>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=425628341&amp;site=qq&amp;menu=yes"><img border="0" width="77" height="22" src="images/qq.png"></a> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=425628341&amp;site=qq&amp;menu=yes"><img border="0" width="77" height="22" src="images/qq.png"></a>
+<p></p></div>
+</div>
+<div class="q13">
+<div class="q14"><dl>联系我们</dl><dt style="padding-top:15px;"><img src="images/j_03.png" /></dt><dd>当前位置：首页 > 联系我们</dd></div>
+<div class="q31">
+重庆荣和胜新型建材有限公司 <br>
+联系人：母经理<br>
+电话：187-2337-7259<br>
+电话：157-2335-9823<br>
+地址：重庆市渝北区佳园路北城阳光经典
+
+</div>
+</div>
+</div>
+<div class="q28">Copyrigt &#169; 2017 重庆荣和胜新型建材有限公司 版权所有 渝ICP备16013050号-2    <br>
+电话： 187-2337-7259 联系人：母经理     地址：重庆市渝北区佳园路北城阳光经典
+
+<!-- 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3c0d33d778c93f088ef9f2f65a126afd";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+ -->
+</div>
+<div class="q77" id="light">
+<div class="q78"></div>
+<div class="q80">
+<div class="q81">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><div class="q82"><dl>187-2337-7259</dl><dt>24小时销售/咨询热线↑</dt></div></a>
+<div class="q83"><img src="images/qq_06.png" /><a href="#" target="_blank"><img src="images/qq_09.png" /></a></div>
+<div class="q84"><img src="images/qq_11.png" style="margin-bottom:5px;" />
+<div class="q85"><a href="http://wpa.qq.com/msgrd?v=425628341&amp;uin=#&amp;site=qq&amp;menu=yes" target="_blank"><img src="images/qqq_03.png" /></a>母</div>
+</div>
+<div class="q86"><img src="images/qq_14.png" style="margin-bottom:10px;"/><br /><img src="images/qq_144.png" /></div>
+</div>
+</div>
+<div class="q79"></div>
+</div>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?type=left&amp;btn=l5.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</body>
+</html>

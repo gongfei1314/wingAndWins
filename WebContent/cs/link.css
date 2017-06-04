@@ -1,0 +1,41 @@
+/* CSS Document */
+a:link {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+font-size: 12px;
+color: #333333;
+text-decoration: none;
+}
+a:hover {
+font-size: 12px;
+color: #cc0000;
+text-decoration: none;
+}
+a:active {
+font-size: 12px;
+color: #333333;
+text-decoration: none;
+}
+.a1:link {
+	font-size: 12px; 
+	color: #cc0000;
+	text-decoration: none;
+}
+.a1:visited {
+font-size: 12px;
+color: #cc0000; 
+text-decoration: none;
+}
+.a1:hover {
+font-size: 12px;
+color: #ff0000;
+text-decoration: none;
+}
+.a1:active {
+font-size: 12px; 
+color: #cc0000;
+text-decoration: none;
+}
